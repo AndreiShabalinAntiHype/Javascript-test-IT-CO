@@ -56,7 +56,7 @@ function bin_search(arr, x) {
 }
 
 function algorithm(array,n) {
-    for (let i = 0;i<array.length;++i) {
+    for (let i = 0;i<array.length && array[i]<=Math.ceil(n / 2);++i) {
         let j = bin_search(array,n - array[i]);
         if (j!=-1) {
             return {i,j};
